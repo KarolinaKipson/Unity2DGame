@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Checkpoint
+  - FallDetector
+  - Ground
+  - BorderRight
+  - HitBorder
   layers:
   - Default
   - TransparentFX
@@ -17,7 +21,7 @@ TagManager:
   - 
   - Ground
   - BlockingLayer
-  - 
+  - Enemy
   - 
   - 
   - 

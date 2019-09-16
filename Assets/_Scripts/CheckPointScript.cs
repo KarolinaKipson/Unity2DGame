@@ -5,12 +5,9 @@ using UnityEngine;
 public class CheckPointScript : MonoBehaviour
 {
     public Sprite woodenSign;
-    public Sprite scroll;
-    public Sprite potion;
-    public Sprite tresaureChest;
 
     // private SpriteRenderer checkpointSpriteRenderer;
-    private bool CheckpointReached;
+    private bool isCheckpointReached;
 
     // Start is called before the first frame update
     private void Start()
@@ -27,7 +24,7 @@ public class CheckPointScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            CheckpointReached = true;
+            isCheckpointReached = true;
         }
     }
 }

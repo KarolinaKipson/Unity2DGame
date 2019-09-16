@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DiamondScript : MonoBehaviour
 {
-    public int score = 0;
+    private LevelManager gameLevelManager;
+    public int diamondValue;
 
     // Start is called before the first frame update
     private void Start()
     {
+        gameLevelManager = FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame
@@ -19,8 +22,11 @@ public class DiamondScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Triggered");
-        Destroy(gameObject);
-        score += 1;
+        if (collision.tag == "Player")
+        {
+            gameLevelManager.AddDiamonds(diamondValue);
+            Destroy(gameObject);
+        }
+        // Debug.Log("Triggered");
     }
 }
