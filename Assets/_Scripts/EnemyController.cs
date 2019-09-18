@@ -4,95 +4,100 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public int health;
-    public int demage;
+    public float cHealth;
+    public float maxHealth;
+    public float demage;
     public bool isDead;
     private Animator enemyAnim;
-    private bool isFacingRight = false;
     private Rigidbody2D enemyRigidbody;
+    private float speed;
 
-    //private Vector3 localScale;
+    public Transform target;
+    public Transform currentPosition;
     private bool attacking;
 
     private float attackTimer = 0f;
-    private float attackCD = 500f;
+    private float attackCD = 1f;
 
     // Start is called before the first frame update
     private void Start()
     {
+        maxHealth = 5f;
+        cHealth = maxHealth;
+        speed = 3f;
+        demage = 1f;
         attacking = false;
-        health = 5;
-        demage = 1;
         isDead = false;
         enemyAnim = GetComponent<Animator>();
         enemyRigidbody = GetComponent<Rigidbody2D>();
         attackTimer = attackCD;
-        //transform.Translate(Vector2.left * 5f * Time.deltaTime);
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (attacking && health > 0)
+        if (attacking)
         {
             if (attackTimer > 0)
             {
                 attackTimer -= Time.deltaTime;
             }
-            else { attacking = false; }
+            else if (attackTimer <= 0)
+            {
+                attacking = false;
+                enemyAnim.SetBool("attacking", attacking);
+            }
+
+            //Turn to player when attacking???
+            //if (target.position.x < currentPosition.position.x)
+            //{
+            //    //enemyRigidbody.velocity = new Vector2(-1 * speed, enemyRigidbody.velocity.y);
+
+            //    transform.localScale = new Vector2(-Mathf.Abs(currentPosition.localScale.x), currentPosition.localScale.y);
+            //}
+            //else if (target.position.x > currentPosition.position.x)
+            //{
+            //    // enemyRigidbody.velocity = new Vector2(1 * speed, enemyRigidbody.velocity.y);
+
+            //    transform.localScale = new Vector2(Mathf.Abs
+            //        (currentPosition.localScale.x), currentPosition.localScale.y);
+            //}
         }
-        //if (health == 0)
-        //{
-        //}
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && health > 0)
+        if (collision.tag == "Player")
         {
             Attack();
             TakeDamage(demage);
         }
     }
 
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Player")
-    //    {
-    //        Attack();
-    //        TakeDamage(demage);
-    //    }
-    //}
-
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Player")
-    //    {
-    //        attacking = false;
-    //        enemyAnim.SetBool("attacking", attacking);
-    //    }
-    //}
-
     public void Attack()
     {
+        attackTimer = attackCD;
         attacking = true;
         enemyAnim.SetBool("attacking", attacking);
-        attackTimer = attackCD;
     }
 
-    public void TakeDamage(int demage)
+    public void TakeDamage(float demage)
     {
-        if (health > 0)
+        cHealth -= demage * Time.deltaTime; //
+        Debug.Log("Damage taken!");
+
+        if (cHealth <= 0)
         {
-            health -= demage;
-            Debug.Log("Damage taken!");
+            StartCoroutine("Death");
         }
-        else
-        {
-            attacking = false;
-            isDead = true;
-            enemyAnim.SetBool("isDead", isDead);
-            Destroy(gameObject);
-        }
+    }
+
+    public IEnumerator Death()
+    {
+        isDead = true;
+        enemyAnim.SetBool("isDead", isDead);
+
+        yield return new WaitForSeconds(0.57f);
+        Destroy(gameObject);
     }
 }
