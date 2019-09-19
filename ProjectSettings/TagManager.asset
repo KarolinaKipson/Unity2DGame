@@ -10,6 +10,8 @@ TagManager:
   - Ground
   - BorderRight
   - HitBorder
+  - Medicine
+  - Poison
   layers:
   - Default
   - TransparentFX

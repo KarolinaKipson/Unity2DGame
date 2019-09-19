@@ -8,6 +8,8 @@ public class PatrolScript : MonoBehaviour
     private bool isMovingRight = false;
 
     public Transform groundDetection;
+    public Transform targetPlayer;
+    public Transform currentPosition;
 
     public float distance = 0.3f;
 
@@ -45,8 +47,23 @@ public class PatrolScript : MonoBehaviour
     {
         if (collision.tag == "Ground")
         {
-            facing.x *= -1;
-            transform.localScale = new Vector3(facing.x * 0.4f, 0.4f, 1f);
+            TurnAround();
         }
+
+        // Turn around when player is behind but within reach of attack.
+        if (collision.tag == "Player")
+        {
+            if ((targetPlayer.position.x < currentPosition.position.x && isMovingRight) ||
+                    (targetPlayer.position.x > currentPosition.position.x && !isMovingRight))
+            {
+                TurnAround();
+            }
+        }
+    }
+
+    public void TurnAround()
+    {
+        facing.x *= -1;
+        transform.localScale = new Vector3(facing.x * 0.4f, 0.4f, 1f);
     }
 }
