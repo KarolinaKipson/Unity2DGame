@@ -9,33 +9,32 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth;
     public float demage;
     public bool isDead;
+
     private Animator playerAnim;
 
     public Slider healthBar;
+    public int numLives;
+
+    public LevelManager gameLevelManager;
 
     // Start is called before the first frame update
     private void Start()
     {
+        //enemy 0.5 points, medicine, poison 1 point
         maxHealth = 10f;
         cHealth = maxHealth;
         demage = 25f;
         isDead = false;
         playerAnim = GetComponent<Animator>();
         healthBar.value = maxHealth;
+        gameLevelManager = FindObjectOfType<LevelManager>();
+        numLives = 5;
     }
 
     // Update is called once per frame
     private void Update()
     {
     }
-
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Enemy")
-    //    {
-    //        TakeDamage(demage);
-    //    }
-    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -71,19 +70,25 @@ public class PlayerHealth : MonoBehaviour
         cHealth -= demage * Time.deltaTime;
 
         healthBar.value = cHealth;
-
         if (cHealth <= 0)
         {
-            StartCoroutine("Death");
+            cHealth = 0;
+            Death();
         }
     }
 
-    public IEnumerator Death()
+    public void Death()
     {
+        numLives -= 1;
+        PlayerPrefs.SetInt("Lives", numLives);
         isDead = true;
         playerAnim.SetBool("isDead", isDead);
 
-        yield return new WaitForSeconds(0.58f);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+
+        gameLevelManager.AfterDeath();
+
+        cHealth = maxHealth;
+        healthBar.value = cHealth;
     }
 }

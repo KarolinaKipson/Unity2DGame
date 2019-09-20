@@ -17,31 +17,39 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        // Following player.
-        playerPosition = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
-
-        if (player.transform.localScale.x > 0f) // Left
+        if (player != null)
         {
-            playerPosition = new Vector3(playerPosition.x + offset, playerPosition.y, playerPosition.z);
-        }
-        else // Right
-        {
-            playerPosition = new Vector3(playerPosition.x - offset, playerPosition.y, playerPosition.z);
-        }
+            // Following player.
+            playerPosition = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
 
-        // Camera constraints.
-        if (bounds)
-        {
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPosition.x, maxPosition.x),
-                Mathf.Clamp(transform.position.y, minPosition.y, maxPosition.y), Mathf.Clamp(transform.position.z, minPosition.z, maxPosition.z));
-        }
+            if (player.transform.localScale.x > 0f) // Left
+            {
+                playerPosition = new Vector3(playerPosition.x + offset, playerPosition.y, playerPosition.z);
+            }
+            else // Right
+            {
+                playerPosition = new Vector3(playerPosition.x - offset, playerPosition.y, playerPosition.z);
+            }
 
-        // Smooth transfer Camera left and right.
-        transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
+            // Camera constraints.
+            if (bounds)
+            {
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPosition.x, maxPosition.x),
+                    Mathf.Clamp(transform.position.y, minPosition.y, maxPosition.y), Mathf.Clamp(transform.position.z, minPosition.z, maxPosition.z));
+            }
+
+            // Smooth transfer Camera left and right.
+            transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
+        }
+        else
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
 }

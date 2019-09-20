@@ -12,6 +12,7 @@ TagManager:
   - HitBorder
   - Medicine
   - Poison
+  - NextLevel
   layers:
   - Default
   - TransparentFX

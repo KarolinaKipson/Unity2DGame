@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class CollectablesScript : MonoBehaviour
 {
-    private PlayerHealth health;
+    private LevelManager gameLevelManager;
+    public int diamondValue;
 
     // Start is called before the first frame update
     private void Start()
     {
-        health = FindObjectOfType<PlayerHealth>();
+        gameLevelManager = FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class CollectablesScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            gameLevelManager.AddDiamonds(diamondValue);
             Destroy(gameObject);
         }
     }

@@ -96,5 +96,10 @@ public class PlayerController : MonoBehaviour
         {
             respawnPoint = collision.transform.position;
         }
+
+        if (collision.tag == "NextLevel")
+        {
+            gameLevelManager.NextLevel();
+        }
     }
 }
