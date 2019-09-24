@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6935943571699094376}
   m_Layer: 0
   m_Name: BlackGem
-  m_TagString: Untagged
+  m_TagString: Poison
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627bec2297a6a894796f3ec0420363c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamondValue: 5
+  collectableValue: 2
 --- !u!61 &6935943571699094376
 BoxCollider2D:
   m_ObjectHideFlags: 0

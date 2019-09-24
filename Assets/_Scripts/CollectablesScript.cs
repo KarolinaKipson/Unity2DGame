@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectablesScript : MonoBehaviour
 {
     private LevelManager gameLevelManager;
-    public int diamondValue;
+    public int collectableValue;
 
     // Start is called before the first frame update
     private void Start()
@@ -22,7 +22,8 @@ public class CollectablesScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            gameLevelManager.AddDiamonds(diamondValue);
+            gameLevelManager.AddDiamonds(collectableValue);
+            FindObjectOfType<AudioManager>().Play("Collectables");
             Destroy(gameObject);
         }
     }

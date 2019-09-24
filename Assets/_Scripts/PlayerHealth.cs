@@ -7,7 +7,8 @@ public class PlayerHealth : MonoBehaviour
 {
     public float cHealth;
     public float maxHealth;
-    public float demage;
+    public float demageE1;
+    public float demageP1;
     public bool isDead;
 
     private Animator playerAnim;
@@ -17,18 +18,24 @@ public class PlayerHealth : MonoBehaviour
 
     public LevelManager gameLevelManager;
 
+    private bool isRunning;
+
     // Start is called before the first frame update
     private void Start()
     {
         //enemy 0.5 points, medicine, poison 1 point
         maxHealth = 10f;
         cHealth = maxHealth;
-        demage = 25f;
+        demageE1 = 0.02f;
+        demageP1 = 0.5f;
         isDead = false;
         playerAnim = GetComponent<Animator>();
+        playerAnim.enabled = true;
+        //isRunning = false;
         healthBar.value = maxHealth;
         gameLevelManager = FindObjectOfType<LevelManager>();
         numLives = 5;
+        PlayerPrefs.SetInt("Lives", numLives);
     }
 
     // Update is called once per frame
@@ -36,27 +43,30 @@ public class PlayerHealth : MonoBehaviour
     {
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
         {
-            TakeDamage(demage);
+            StartCoroutine(TakeDamage(demageE1));
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.tag == "Poison")
         {
-            TakeDamage(demage);
+            StartCoroutine(TakeDamage(demageP1));
         }
 
         if (collision.tag == "Medicine")
         {
-            IncreaseHealth(demage);
+            IncreaseHealth(demageP1);
         }
     }
 
     public void IncreaseHealth(float demage)
     {
-        cHealth += demage * Time.deltaTime;
+        cHealth += demage;
 
         healthBar.value = cHealth;
         if (cHealth > maxHealth)
@@ -65,30 +75,27 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float demage)
+    public IEnumerator TakeDamage(float demage)
     {
-        cHealth -= demage * Time.deltaTime;
+        cHealth -= demage;
 
         healthBar.value = cHealth;
+
         if (cHealth <= 0)
         {
             cHealth = 0;
-            Death();
+
+            yield return StartCoroutine(DeathAnim());
+
+            gameLevelManager.AfterDeath();
         }
     }
 
-    public void Death()
+    public IEnumerator DeathAnim()
     {
-        numLives -= 1;
-        PlayerPrefs.SetInt("Lives", numLives);
         isDead = true;
-        playerAnim.SetBool("isDead", isDead);
+        playerAnim.SetBool("Dead", isDead);
 
-        gameObject.SetActive(false);
-
-        gameLevelManager.AfterDeath();
-
-        cHealth = maxHealth;
-        healthBar.value = cHealth;
+        yield return new WaitForSeconds(1.3f);
     }
 }

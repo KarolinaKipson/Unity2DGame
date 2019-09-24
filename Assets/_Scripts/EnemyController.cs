@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour
 
     public Slider healthBar;
 
+    public PlayerController player;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -27,6 +29,7 @@ public class EnemyController : MonoBehaviour
         attacking = false;
         isDead = false;
         enemyAnim = GetComponent<Animator>();
+        player = FindObjectOfType<PlayerController>();
         attackTimer = attackCD;
         healthBar.value = maxHealth;
     }
@@ -44,6 +47,7 @@ public class EnemyController : MonoBehaviour
             {
                 attacking = false;
                 enemyAnim.SetBool("attacking", attacking);
+                FindObjectOfType<AudioManager>().Stop("Attack");
             }
         }
     }
@@ -53,7 +57,11 @@ public class EnemyController : MonoBehaviour
         if (collision.tag == "Player")
         {
             Attack();
-            TakeDamage(demage);
+
+            if (player.attacking)
+            {
+                TakeDamage(demage);
+            }
         }
     }
 
@@ -61,6 +69,7 @@ public class EnemyController : MonoBehaviour
     {
         attackTimer = attackCD;
         attacking = true;
+        FindObjectOfType<AudioManager>().Play("Attack");
         enemyAnim.SetBool("attacking", attacking);
     }
 

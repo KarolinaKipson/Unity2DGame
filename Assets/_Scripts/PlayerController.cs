@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 respawnPoint;
     public LevelManager gameLevelManager;
 
-    private bool attacking;
+    public bool attacking;
     private float attackTimer = 0f;
     private float attackCD = 0.3f;
 
@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl)) // Attack.
         {
             attacking = true;
+            FindObjectOfType<AudioManager>().Play("AttackPlayer");
             attackTimer = attackCD;
         }
         if (attacking)
@@ -89,7 +90,7 @@ public class PlayerController : MonoBehaviour
         if (collision.tag == "FallDetector") // Fall of a platform.
         {
             //transform.position = respawnPoint;
-            gameLevelManager.Respawn();
+            gameLevelManager.AfterDeath();
         }
 
         if (collision.tag == "Checkpoint") // Return to checkpoint (wooden sign).
@@ -97,7 +98,7 @@ public class PlayerController : MonoBehaviour
             respawnPoint = collision.transform.position;
         }
 
-        if (collision.tag == "NextLevel")
+        if (collision.tag == "NextLevel") // Go to next level.
         {
             gameLevelManager.NextLevel();
         }

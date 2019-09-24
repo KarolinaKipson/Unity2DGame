@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 868938608242502725}
   - component: {fileID: 617319782511833039}
   m_Layer: 9
-  m_Name: Poison (1)
+  m_Name: Poison
   m_TagString: Poison
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,4 +120,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627bec2297a6a894796f3ec0420363c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamondValue: 0
+  collectableValue: 1

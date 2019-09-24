@@ -17,11 +17,13 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        // Toggle pause with escape.
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPaused = !isPaused;
         }
 
+        // Show PauseMenu, pause game.
         if (isPaused)
         {
             pauseMenu.SetActive(true);
@@ -42,17 +44,32 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        ResetScore();
+        ResetLives();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         //Application.LoadLevel(Application.loadedLevel); -> depricated
     }
 
     public void MainMenu()
     {
+        FindObjectOfType<AudioManager>().Stop("MainTheme");
         SceneManager.LoadScene(0);
+        FindObjectOfType<AudioManager>().Play("MainMenuTheme");
     }
 
     public void Quit()
     {
+        FindObjectOfType<AudioManager>().Stop("MainTheme");
         Application.Quit();
+    }
+
+    public void ResetScore()
+    {
+        PlayerPrefs.DeleteKey("Score");
+    }
+
+    public void ResetLives()
+    {
+        PlayerPrefs.SetInt("Lives", 5);
     }
 }

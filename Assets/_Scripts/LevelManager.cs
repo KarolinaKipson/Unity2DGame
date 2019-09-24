@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public PlayerController gamePlayer;
     public PlayerHealth playerHealth;
     public int numLives;
+    public TMP_Text livesText;
 
     public int diamonds;
     public TMP_Text diamondText;
@@ -21,41 +22,50 @@ public class LevelManager : MonoBehaviour
     public int levelIndex;
 
     public TMP_Text highscoreText;
-
     public int highScore;
+
+    public TextMeshProUGUI instructions;
+
+    private void Awake()
+    {
+    }
 
     // Start is called before the first frame update
     private void Start()
     {
         gamePlayer = FindObjectOfType<PlayerController>();
         playerHealth = FindObjectOfType<PlayerHealth>();
-        numLives = PlayerPrefs.GetInt("Lives", 5);
+        numLives = PlayerPrefs.GetInt("Lives");
         diamonds = PlayerPrefs.GetInt("Score", 0);
         highScore = PlayerPrefs.GetInt("HighScore", 0);
         levelIndex = PlayerPrefs.GetInt("Level", 1);
         DisplayScore();
         DisplayLevel();
         DisplayHighScore();
+        DisplayLives();
+        instructions.enabled = true;
         nextlevelPrefab.SetActive(false);
-        respawnDelay = 2f;
+        respawnDelay = 3f;
     }
 
     // Update is called once per frame
     private void Update()
     {
-    }
-
-    public void Respawn()
-    {
-        StartCoroutine("RespawnCorutine");
+        StartCoroutine(Instructions());
     }
 
     public IEnumerator RespawnCorutine()
     {
         gamePlayer.gameObject.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("PlatformFall");
         yield return new WaitForSeconds(respawnDelay);
+
         gamePlayer.transform.position = gamePlayer.respawnPoint;
+
         gamePlayer.gameObject.SetActive(true);
+
+        playerHealth.cHealth = playerHealth.maxHealth;
+        playerHealth.healthBar.value = playerHealth.cHealth;
     }
 
     public void AddDiamonds(int numOfDiamonds)
@@ -77,6 +87,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public IEnumerator Instructions()
+    {
+        yield return new WaitForSeconds(10f);
+        instructions.enabled = false;
+    }
+
     public void DisplayScore()
     {
         diamondText.text = "Score: " + diamonds;
@@ -88,6 +104,12 @@ public class LevelManager : MonoBehaviour
         highscoreText.text = "Highscore: " + highScore;
     }
 
+    public void DisplayLives()
+    {
+        numLives = PlayerPrefs.GetInt("Lives");
+        livesText.text = "Lives: " + numLives;
+    }
+
     public void ResetScore()
     {
         PlayerPrefs.DeleteKey("Score");
@@ -95,7 +117,7 @@ public class LevelManager : MonoBehaviour
 
     public void ResetLives()
     {
-        PlayerPrefs.DeleteKey("Lives");
+        PlayerPrefs.SetInt("Lives", 5);
     }
 
     public void DisplayLevel()
@@ -113,22 +135,27 @@ public class LevelManager : MonoBehaviour
 
     public void GameOver()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(5);
         ResetScore();
         ResetLives();
     }
 
-    public void AfterDeath() //GameOver or not?
+    public void AfterDeath() // GameOver or Respawn
     {
-        numLives = PlayerPrefs.GetInt("Lives");
-        if (numLives <= 0)
+        numLives -= 1;
+        PlayerPrefs.SetInt("Lives", numLives);
+
+        if (numLives > 0)
         {
-            GameOver();
+            DisplayLives();
+
+            StartCoroutine(RespawnCorutine());
         }
         else
         {
-            Debug.Log(numLives);
-            Respawn();
+            numLives = 0;
+            gamePlayer.gameObject.SetActive(false);
+            GameOver();
         }
     }
 }

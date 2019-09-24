@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PatrolScript : MonoBehaviour
 {
-    // public float speed;
     private bool isMovingRight = false;
 
     public Transform groundDetection;
@@ -26,8 +25,10 @@ public class PatrolScript : MonoBehaviour
     {
         transform.Translate(facing * speed * Time.deltaTime);
 
+        // Raycasting if the ground exists, small distance.
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
 
+        // If it doesn't find ground turn.
         if (groundInfo.collider == false)
         {
             if (isMovingRight == false)
@@ -45,6 +46,7 @@ public class PatrolScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Patrol script on the ground, if it finds obstacle ground turn.
         if (collision.tag == "Ground")
         {
             TurnAround();
