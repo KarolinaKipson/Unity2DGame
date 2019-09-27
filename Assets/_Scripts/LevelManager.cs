@@ -56,8 +56,6 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator RespawnCorutine()
     {
-        gamePlayer.gameObject.SetActive(false);
-        FindObjectOfType<AudioManager>().Play("PlatformFall");
         yield return new WaitForSeconds(respawnDelay);
 
         gamePlayer.transform.position = gamePlayer.respawnPoint;
@@ -144,11 +142,11 @@ public class LevelManager : MonoBehaviour
     {
         numLives -= 1;
         PlayerPrefs.SetInt("Lives", numLives);
-
+        //FindObjectOfType<AudioManager>().Play("PlatformFall");
         if (numLives > 0)
         {
             DisplayLives();
-
+            gamePlayer.gameObject.SetActive(false);
             StartCoroutine(RespawnCorutine());
         }
         else

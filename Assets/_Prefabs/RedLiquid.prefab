@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3309841182051386517}
   - component: {fileID: 3463767190761730365}
-  - component: {fileID: 1659891678216176590}
   - component: {fileID: 144040117803955565}
+  - component: {fileID: 1710226227792377348}
   m_Layer: 0
   m_Name: RedLiquid
   m_TagString: Medicine
@@ -82,19 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1659891678216176590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8534646534962881707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627bec2297a6a894796f3ec0420363c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectableValue: 2
 --- !u!61 &144040117803955565
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -121,3 +108,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3477793, y: 2.505355}
   m_EdgeRadius: 0
+--- !u!114 &1710226227792377348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534646534962881707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bddee7de3fd1349be161cc9f20b541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demage: 2

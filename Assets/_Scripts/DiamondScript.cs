@@ -25,7 +25,8 @@ public class DiamondScript : MonoBehaviour
         if (collision.tag == "Player")
         {
             gameLevelManager.AddDiamonds(diamondValue);
-            FindObjectOfType<AudioManager>().Play("CollectDiamonds");
+            /*FindObjectOfType<AudioManager>().Play("CollectDiamonds")*/
+            ;
             Destroy(gameObject);
         }
     }

@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 9a909a23831232244a013580a57a0ec7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5861918153687331951
+    second: Witch Sprite Sheet_0
+  - first:
+      213: 1695899913026797140
+    second: Witch Sprite Sheet_1
+  - first:
+      213: -3983967587842051103
+    second: Witch Sprite Sheet_2
+  - first:
+      213: 7017317022086860891
+    second: Witch Sprite Sheet_3
+  - first:
+      213: 3514260798988723699
+    second: Witch Sprite Sheet_4
+  - first:
+      213: -2642056329096655613
+    second: Witch Sprite Sheet_5
+  - first:
+      213: -9203436435691366051
+    second: Witch Sprite Sheet_6
+  - first:
+      213: -8640903989521060576
+    second: Witch Sprite Sheet_7
+  - first:
+      213: -28442747422088511
+    second: Witch Sprite Sheet_8
+  - first:
+      213: -6290351493453434371
+    second: Witch Sprite Sheet_9
+  - first:
+      213: 3899300120594848015
+    second: Witch Sprite Sheet_10
+  - first:
+      213: -950251401726453963
+    second: Witch Sprite Sheet_11
+  - first:
+      213: -5126418016596961992
+    second: Witch Sprite Sheet_12
+  - first:
+      213: 6871005769876319402
+    second: Witch Sprite Sheet_13
+  - first:
+      213: -3829949509263074554
+    second: Witch Sprite Sheet_14
+  - first:
+      213: 1573874211095990646
+    second: Witch Sprite Sheet_15
+  - first:
+      213: -4438935526343550710
+    second: Witch Sprite Sheet_16
+  - first:
+      213: 1505514826293153313
+    second: Witch Sprite Sheet_17
+  - first:
+      213: -2068982855655587785
+    second: Witch Sprite Sheet_18
+  - first:
+      213: 713880857422160453
+    second: Witch Sprite Sheet_19
+  - first:
+      213: -316210727215146673
+    second: Witch Sprite Sheet_20
+  - first:
+      213: -671821432026016512
+    second: Witch Sprite Sheet_21
+  - first:
+      213: -5072394025251240195
+    second: Witch Sprite Sheet_22
+  - first:
+      213: 7355430312511724347
+    second: Witch Sprite Sheet_23
+  - first:
+      213: 7442324232909464075
+    second: Witch Sprite Sheet_24
+  - first:
+      213: 2006363251903347686
+    second: Witch Sprite Sheet_25
+  - first:
+      213: -7853746265432411059
+    second: Witch Sprite Sheet_26
+  - first:
+      213: 1252959164264326423
+    second: Witch Sprite Sheet_27
+  - first:
+      213: -4181210163995712047
+    second: Witch Sprite Sheet_28
+  - first:
+      213: 1478184691376067844
+    second: Witch Sprite Sheet_29
+  - first:
+      213: -9147508814203282992
+    second: Witch Sprite Sheet_30
+  - first:
+      213: -4604705761413485156
+    second: Witch Sprite Sheet_31
+  - first:
+      213: -4944808744968267751
+    second: Witch Sprite Sheet_32
+  - first:
+      213: -804566748634746339
+    second: Witch Sprite Sheet_33
+  - first:
+      213: -8664904811612976528
+    second: Witch Sprite Sheet_34
+  - first:
+      213: -8702059507426546596
+    second: Witch Sprite Sheet_35
+  - first:
+      213: -7579017767086463430
+    second: Witch Sprite Sheet_36
+  - first:
+      213: 2228162036633269530
+    second: Witch Sprite Sheet_37
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 160
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aac833686259e447b21aeaf13ba812c
+      internalID: 5861918153687331951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 160
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00e45e864176424f8f55c4db5cbb58a
+      internalID: 1695899913026797140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 160
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b1a57dacbe3e43b3f892e907dfe84
+      internalID: -3983967587842051103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97855610f2517f24198c8355cfdee00b
+      internalID: 7017317022086860891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 128
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7152941014c9acd4c97d1a8939efa023
+      internalID: 3514260798988723699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 131
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55463f2e76aac4847b205e5eeec06593
+      internalID: -2642056329096655613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 133
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1550deac11d989a438877455030943ac
+      internalID: -9203436435691366051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 129
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3046dabdca7e1c948968a1d2b8e26c66
+      internalID: -8640903989521060576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 128
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536afbc3e2faf4b4d989f64278bbb126
+      internalID: -28442747422088511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 130
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11127cd4e55625c4f82b41dbca505531
+      internalID: -6290351493453434371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 132
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0586320e65c694099fa240ac2ed2f5
+      internalID: 3899300120594848015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 130
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c23e2e5bccb45a49ace3e3b39ad4cfe
+      internalID: -950251401726453963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 96
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6037c03244806754c904c4c98a11749e
+      internalID: -5126418016596961992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 96
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe11e4db80f50dd4ba876d71fda69716
+      internalID: 6871005769876319402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 96
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbf2eac1ec82ff408cc3a6fa9fe8709
+      internalID: -3829949509263074554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57ec9231b597a64a8064af8754bc89a
+      internalID: 1573874211095990646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ace783d82717349b30bba52de78ceb
+      internalID: -4438935526343550710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 96
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052b6d8bc580f4e4b9b6a9869664b2f5
+      internalID: 1505514826293153313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f7bc2d73a72b2488b3326c16a2e1d8
+      internalID: -2068982855655587785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a14f39cdc313fa418648ffd81cc8e50
+      internalID: 713880857422160453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11c1cf2e3d6c0249a1dfbbe303ef613
+      internalID: -316210727215146673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 64
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6607597f4c79f6f468f70002895f9ebc
+      internalID: -671821432026016512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d723bb6d2261d47aa57d65af2ad23c
+      internalID: -5072394025251240195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 64
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e132b845054c0c4497f70f8b142757a
+      internalID: 7355430312511724347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63111234281cb104c80fff63cce8d818
+      internalID: 7442324232909464075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 32
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7511a68ce956774384225f93bc09889
+      internalID: 2006363251903347686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 32
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63b13383299aa04eb53c6e011017c93
+      internalID: -7853746265432411059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166d08a51d5d2ee43a7868b2e4c42ec9
+      internalID: 1252959164264326423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 32
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6445db8b03b424c4ea951677385954f5
+      internalID: -4181210163995712047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 32
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94538015092bb78479f11f394023cae7
+      internalID: 1478184691376067844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 32
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41944e78d040f704bace486b69260265
+      internalID: -9147508814203282992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 32
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c43040103e4cf54faeac817dcb22a45
+      internalID: -4604705761413485156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 32
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e0e1098c55e2b459fcbece09b8984c
+      internalID: -4944808744968267751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 32
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50de229412c469d42aa76da8156da563
+      internalID: -804566748634746339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111cb13e851b72f4e88f491c10dea5b3
+      internalID: -8664904811612976528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 3
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d51b78acf425c0409497e22315c6e70
+      internalID: -8702059507426546596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4d31d6bdb508a4db1e57cfb62cc045
+      internalID: -7579017767086463430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1873dbddc2dc9546ab459295e50d23d
+      internalID: 2228162036633269530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

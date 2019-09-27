@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3391131155117770297}
   - component: {fileID: 6884257863375244146}
-  - component: {fileID: 2818528169339598756}
   - component: {fileID: 6412329838260790969}
+  - component: {fileID: 7411091453730676770}
   m_Layer: 9
   m_Name: RedGem
   m_TagString: Poison
@@ -82,19 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2818528169339598756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9112405240377618695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627bec2297a6a894796f3ec0420363c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectableValue: 3
 --- !u!61 &6412329838260790969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -121,3 +108,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
+--- !u!114 &7411091453730676770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9112405240377618695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b8d04e36a84c248a996790d43ce9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demage: 1

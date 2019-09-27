@@ -6,13 +6,11 @@ public class CheckPointScript : MonoBehaviour
 {
     public Sprite woodenSign;
 
-    // private SpriteRenderer checkpointSpriteRenderer;
     private bool isCheckpointReached;
 
     // Start is called before the first frame update
     private void Start()
     {
-        // checkpointSpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

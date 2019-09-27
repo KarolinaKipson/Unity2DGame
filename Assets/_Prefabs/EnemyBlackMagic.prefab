@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7423808104008893184}
   m_Layer: 10
   m_Name: EnemyBlackMagic
-  m_TagString: Enemy
+  m_TagString: Enemy4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,8 +230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cHealth: 0
-  maxHealth: 0
-  demage: 0
+  maxHealth: 5
+  demage: 1
   isDead: 0
   healthBar: {fileID: 6004993836752117309}
   player: {fileID: 0}

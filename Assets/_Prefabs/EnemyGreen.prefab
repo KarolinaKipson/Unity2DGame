@@ -281,8 +281,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cHealth: 0
-  maxHealth: 0
-  demage: 0
+  maxHealth: 2
+  demage: 6
+  playerDemage: 0.02
   isDead: 0
   healthBar: {fileID: 3607712876341272352}
   player: {fileID: 6088357578161823007, guid: 876eb6cad7fffff49ba21dde66e4b7e2, type: 3}
@@ -302,7 +303,7 @@ MonoBehaviour:
   targetPlayer: {fileID: 6088357578161823004, guid: 876eb6cad7fffff49ba21dde66e4b7e2,
     type: 3}
   currentPosition: {fileID: 5500282213242672429}
-  distance: 0.2
+  distance: 0.5
   speed: 1
 --- !u!1 &7422635772905090259
 GameObject:
@@ -450,6 +451,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626426278853356538, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626426278853356538, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_Value
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6014071862254966051, guid: 4e89e197af6e708449624583f203d5dc,
         type: 3}

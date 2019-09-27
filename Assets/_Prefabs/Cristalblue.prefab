@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6479224077441988154}
   - component: {fileID: 6479224077441988155}
   - component: {fileID: 4977173583521995507}
-  - component: {fileID: 2682488712949830333}
+  - component: {fileID: 6431204224927063003}
   m_Layer: 0
   m_Name: Cristalblue
   m_TagString: Untagged
@@ -128,7 +128,7 @@ PolygonCollider2D:
       - {x: 0.07586384, y: -0.37824488}
       - {x: 0.19247246, y: -0.2626605}
       - {x: 0.3750124, y: -0.07755327}
---- !u!114 &2682488712949830333
+--- !u!114 &6431204224927063003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

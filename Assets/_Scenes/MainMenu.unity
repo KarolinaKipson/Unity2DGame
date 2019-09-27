@@ -6376,33 +6376,33 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: PlatformFall
-    clip: {fileID: 8300000, guid: 60a423ecd87c48647aa8b2cd28c4956a, type: 3}
+    clip: {fileID: 8300000, guid: 4c2bd1f4d715e5641a018adfa70449cd, type: 3}
     volume: 0.154
+    pitch: 1.26
+    loop: 0
+    source: {fileID: 0}
+  - name: PoisonCollectables
+    clip: {fileID: 8300000, guid: 0790d69540e9f6b41a44e969bd8536e6, type: 3}
+    volume: 0.56
+    pitch: 1.54
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDeath
+    clip: {fileID: 8300000, guid: 0677967659cb76a41808c3ca6eb504c4, type: 3}
+    volume: 0.255
     pitch: 0.55
     loop: 0
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: HealthCollectables
+    clip: {fileID: 8300000, guid: 135a602abfc1ddd47807b60518f7601b, type: 3}
+    volume: 0.455
+    pitch: 2.23
     loop: 0
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: NextLevel
+    clip: {fileID: 8300000, guid: 598c669651fd32a46a6ca21db08aaee8, type: 3}
+    volume: 0.292
+    pitch: 0.94
     loop: 0
     source: {fileID: 0}
   - name: 

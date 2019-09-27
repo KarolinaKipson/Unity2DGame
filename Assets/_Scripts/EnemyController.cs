@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     public float cHealth;
     public float maxHealth;
     public float demage;
+    public float playerDemage;
     public bool isDead;
     private Animator enemyAnim;
 
@@ -23,9 +24,9 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        maxHealth = 5f;
+        //maxHealth = 5f;
         cHealth = maxHealth;
-        demage = 1f;
+        //demage = 1f;
         attacking = false;
         isDead = false;
         enemyAnim = GetComponent<Animator>();
@@ -47,7 +48,7 @@ public class EnemyController : MonoBehaviour
             {
                 attacking = false;
                 enemyAnim.SetBool("attacking", attacking);
-                FindObjectOfType<AudioManager>().Stop("Attack");
+                //FindObjectOfType<AudioManager>().Stop("Attack");
             }
         }
     }
@@ -69,7 +70,7 @@ public class EnemyController : MonoBehaviour
     {
         attackTimer = attackCD;
         attacking = true;
-        FindObjectOfType<AudioManager>().Play("Attack");
+        //FindObjectOfType<AudioManager>().Play("Attack");
         enemyAnim.SetBool("attacking", attacking);
     }
 
@@ -89,7 +90,7 @@ public class EnemyController : MonoBehaviour
     {
         isDead = true;
         enemyAnim.SetBool("isDead", isDead);
-
+        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
         yield return new WaitForSeconds(0.58f);
         Destroy(gameObject);
     }

@@ -13,8 +13,8 @@ public class GameOver : MonoBehaviour
 
     private void Awake()
     {
-        FindObjectOfType<AudioManager>().Stop("MainTheme");
-        FindObjectOfType<AudioManager>().Play("GameOverTheme");
+        //FindObjectOfType<AudioManager>().Stop("MainTheme");
+        //FindObjectOfType<AudioManager>().Play("GameOverTheme");
     }
 
     private void Start()
@@ -27,16 +27,16 @@ public class GameOver : MonoBehaviour
     public void Restart()
     {
         int level = PlayerPrefs.GetInt("Level");
-        FindObjectOfType<AudioManager>().Stop("GameOverTheme");
+        //FindObjectOfType<AudioManager>().Stop("GameOverTheme");
         SceneManager.LoadScene(level);
-        FindObjectOfType<AudioManager>().Play("MainTheme");
+        //FindObjectOfType<AudioManager>().Play("MainTheme");
     }
 
     public void MainMenu()
     {
-        FindObjectOfType<AudioManager>().Stop("GameOverTheme");
+        //FindObjectOfType<AudioManager>().Stop("GameOverTheme");
         SceneManager.LoadScene(0);
-        FindObjectOfType<AudioManager>().Play("MainMenuTheme");
+        //FindObjectOfType<AudioManager>().Play("MainMenuTheme");
     }
 
     public void ResetHighScore()

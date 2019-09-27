@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4988966223483320937}
   - component: {fileID: 7364579449746034640}
-  - component: {fileID: 3882703364574177396}
   - component: {fileID: 6935943571699094376}
+  - component: {fileID: 6743600501080424183}
   m_Layer: 0
   m_Name: BlackGem
   m_TagString: Poison
@@ -82,19 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3882703364574177396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4948106770490571728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627bec2297a6a894796f3ec0420363c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectableValue: 2
 --- !u!61 &6935943571699094376
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -121,3 +108,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3581457, y: 2.56}
   m_EdgeRadius: 0
+--- !u!114 &6743600501080424183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4948106770490571728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b8d04e36a84c248a996790d43ce9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demage: 2
