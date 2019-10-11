@@ -10,7 +10,8 @@ public class SettingsMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         // Debug.Log(volume);
-        volumeMixer.SetFloat("volume", volume);
+        volumeMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+        // PlayerPrefs.SetFloat("Volume", volume);
     }
 
     public void SetQuality(int qualityIndex)

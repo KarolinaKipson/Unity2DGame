@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1397762258297464364}
   - component: {fileID: 351048360452600583}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: far-grounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,8 +66,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1038942745
-  m_SortingLayer: 3
+  m_SortingLayerID: 1397049235
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e0b93998654bc6340a29444decdff356, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

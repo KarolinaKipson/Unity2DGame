@@ -23,7 +23,7 @@ public class PoisonCollectables : MonoBehaviour
         if (collision.tag == "Player")
         {
             StartCoroutine(playerHealth.TakeDamage(demage));
-            //FindObjectOfType<AudioManager>().PlayOneShot("PoisonCollectables");
+            FindObjectOfType<AudioManager>().PlayOneShot("PoisonCollectables");
             Destroy(gameObject);
         }
     }

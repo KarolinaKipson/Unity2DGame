@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
         gamePlayer = FindObjectOfType<PlayerController>();
         playerHealth = FindObjectOfType<PlayerHealth>();
         numLives = PlayerPrefs.GetInt("Lives");
-        diamonds = PlayerPrefs.GetInt("Score", 0);
+        diamonds = PlayerPrefs.GetInt("Score");
         highScore = PlayerPrefs.GetInt("HighScore", 0);
         levelIndex = PlayerPrefs.GetInt("Level", 1);
         DisplayScore();
@@ -69,9 +69,9 @@ public class LevelManager : MonoBehaviour
     public void AddDiamonds(int numOfDiamonds)
     {
         diamonds += numOfDiamonds;
-        DisplayScore();
 
         PlayerPrefs.SetInt("Score", diamonds);
+        DisplayScore();
 
         if (diamonds > PlayerPrefs.GetInt("HighScore", 0))
         {
@@ -93,6 +93,7 @@ public class LevelManager : MonoBehaviour
 
     public void DisplayScore()
     {
+        diamonds = PlayerPrefs.GetInt("Score");
         diamondText.text = "Score: " + diamonds;
     }
 
@@ -134,7 +135,7 @@ public class LevelManager : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene(5);
-        ResetScore();
+        //ResetScore(); Decided to keep the score if game is over and lives lost but more levels coming.
         ResetLives();
     }
 
@@ -142,7 +143,8 @@ public class LevelManager : MonoBehaviour
     {
         numLives -= 1;
         PlayerPrefs.SetInt("Lives", numLives);
-        //FindObjectOfType<AudioManager>().Play("PlatformFall");
+        FindObjectOfType<AudioManager>().Play("PlatformFall");
+
         if (numLives > 0)
         {
             DisplayLives();

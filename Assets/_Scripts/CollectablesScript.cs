@@ -24,7 +24,7 @@ public class CollectablesScript : MonoBehaviour
         if (collision.tag == "Player")
         {
             gameLevelManager.AddDiamonds(collectableValue);
-            //FindObjectOfType<AudioManager>().PlayOneShot("Collectables");
+            FindObjectOfType<AudioManager>().PlayOneShot("Collectables");
             Destroy(gameObject);
         }
     }

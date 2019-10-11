@@ -23,7 +23,7 @@ public class HealthCollectables : MonoBehaviour
         if (collision.tag == "Player")
         {
             playerHealth.IncreaseHealth(demage);
-            //FindObjectOfType<AudioManager>().PlayOneShot("Collectables");
+            FindObjectOfType<AudioManager>().PlayOneShot("Collectables");
             Destroy(gameObject);
         }
     }

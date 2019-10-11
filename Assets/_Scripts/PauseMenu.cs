@@ -44,7 +44,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        ResetScore();
         ResetLives();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         //Application.LoadLevel(Application.loadedLevel); -> depricated
@@ -52,6 +51,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
+        ResetScore();
         FindObjectOfType<AudioManager>().Stop("MainTheme");
         SceneManager.LoadScene(0);
         FindObjectOfType<AudioManager>().Play("MainMenuTheme");
@@ -59,6 +59,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit()
     {
+        ResetScore();
         FindObjectOfType<AudioManager>().Stop("MainTheme");
         Application.Quit();
     }

@@ -12,8 +12,8 @@ public class WinScript : MonoBehaviour
 
     private void Awake()
     {
-        //FindObjectOfType<AudioManager>().Stop("MainTheme");
-        //FindObjectOfType<AudioManager>().Play("WinTheme");
+        FindObjectOfType<AudioManager>().Stop("MainTheme");
+        FindObjectOfType<AudioManager>().Play("WinTheme");
     }
 
     private void Start()
@@ -25,16 +25,16 @@ public class WinScript : MonoBehaviour
 
     public void Restart()
     {
-        //FindObjectOfType<AudioManager>().Stop("WinTheme");
+        FindObjectOfType<AudioManager>().Stop("WinTheme");
         SceneManager.LoadScene(1);
-        //FindObjectOfType<AudioManager>().Play("MainTheme");
+        FindObjectOfType<AudioManager>().Play("MainTheme");
     }
 
     public void MainMenu()
     {
-        //    FindObjectOfType<AudioManager>().Stop("WinTheme");
+        FindObjectOfType<AudioManager>().Stop("WinTheme");
         SceneManager.LoadScene(0);
-        //FindObjectOfType<AudioManager>().Play("MainMenuTheme");
+        FindObjectOfType<AudioManager>().Play("MainMenuTheme");
     }
 
     public void ResetHighScore()

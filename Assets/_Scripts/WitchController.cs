@@ -19,4 +19,12 @@ public class WitchController : MonoBehaviour
             transform.localScale = new Vector3(-4f, 4f, 1f);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            FindObjectOfType<AudioManager>().Play("Witch");
+        }
+    }
 }

@@ -11,14 +11,14 @@ public class MainMenu : MonoBehaviour
         // Load level 1;
         ResetScore();
         ResetLives();
-        //FindObjectOfType<AudioManager>().Stop("MainMenuTheme");
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //FindObjectOfType<AudioManager>().Play("MainTheme");
+        FindObjectOfType<AudioManager>().Stop("MainMenuTheme");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FindObjectOfType<AudioManager>().Play("MainTheme");
     }
 
     public void QuitGame()
     {
-        //FindObjectOfType<AudioManager>().Stop("MainMenuTheme");
+        FindObjectOfType<AudioManager>().Stop("MainMenuTheme");
         Application.Quit();
     }
 

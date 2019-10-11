@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12982035, y: -0.21675885}
+  m_Offset: {x: 0.053281307, y: -0.07461703}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3167882, y: 1.4335177}
+  m_Size: {x: 7.45576, y: 1.7178013}
   m_EdgeRadius: 0
 --- !u!1 &6936988225645314492
 GameObject:
@@ -454,11 +454,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1100521832574244224, guid: 4e89e197af6e708449624583f203d5dc,
-        type: 3}
-      propertyPath: m_IsContraintActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2626426278853356538, guid: 4e89e197af6e708449624583f203d5dc,
         type: 3}
       propertyPath: m_MaxValue
@@ -469,6 +464,26 @@ PrefabInstance:
       propertyPath: m_Value
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2472497952494777745, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100521832574244224, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_IsContraintActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830390372581292316, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5648251100756834535, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6014071862254966051, guid: 4e89e197af6e708449624583f203d5dc,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -478,6 +493,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166479081784018043, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363917181203889145, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943377162878218208, guid: 4e89e197af6e708449624583f203d5dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e89e197af6e708449624583f203d5dc, type: 3}

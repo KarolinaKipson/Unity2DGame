@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -910,7 +910,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: START NEW
+  m_text: START OVER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c02fba503e5f0b942a8c4c9ce25f3aa5, type: 2}
   m_sharedMaterial: {fileID: -7319917361723920678, guid: c02fba503e5f0b942a8c4c9ce25f3aa5,
@@ -980,7 +980,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0.000011767626, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 671744963}
-    characterCount: 9
+    characterCount: 10
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -1315,7 +1315,7 @@ GameObject:
   - component: {fileID: 1316302224}
   - component: {fileID: 1316302223}
   m_Layer: 5
-  m_Name: StartNew
+  m_Name: StartOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7393,12 +7393,12 @@ PrefabInstance:
     - target: {fileID: 6936988225645314489, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 92.36784
+      value: 91.798
       objectReference: {fileID: 0}
     - target: {fileID: 6936988225645314489, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.33501792
+      value: 0.393
       objectReference: {fileID: 0}
     - target: {fileID: 6936988225645314489, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
@@ -7459,6 +7459,16 @@ PrefabInstance:
         type: 3}
       propertyPath: playerDemage
       value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898530674886070267, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.151663
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898530674886070267, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.405262
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d4fc0df5471674eabfe950905ceae5, type: 3}
@@ -11065,7 +11075,7 @@ MonoBehaviour:
   diamonds: 0
   diamondText: {fileID: 1683127411}
   levelText: {fileID: 1701234232}
-  nextLevelScore: 120
+  nextLevelScore: 170
   nextlevelPrefab: {fileID: 955957287}
   levelIndex: 0
   highscoreText: {fileID: 1784423188}
@@ -14954,7 +14964,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Find the bones to protect you, collect diamonds again to show them.
+  m_text: Find the bones to protect you and ground to stand on.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c02fba503e5f0b942a8c4c9ce25f3aa5, type: 2}
   m_sharedMaterial: {fileID: -7319917361723920678, guid: c02fba503e5f0b942a8c4c9ce25f3aa5,

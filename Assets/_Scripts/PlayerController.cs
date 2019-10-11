@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl)) // Attack.
         {
             attacking = true;
-            // FindObjectOfType<AudioManager>().PlayOneShot("AttackPlayer");
+            FindObjectOfType<AudioManager>().PlayOneShot("AttackPlayer");
             attackTimer = attackCD;
         }
         if (attacking)
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.tag == "NextLevel") // Go to next level.
         {
-            //FindObjectOfType<AudioManager>().PlayOneShot("NextLevel");
+            FindObjectOfType<AudioManager>().PlayOneShot("NextLevel");
             gameLevelManager.NextLevel();
         }
     }

@@ -48,7 +48,7 @@ public class EnemyController : MonoBehaviour
             {
                 attacking = false;
                 enemyAnim.SetBool("attacking", attacking);
-                //FindObjectOfType<AudioManager>().Stop("Attack");
+                FindObjectOfType<AudioManager>().Stop("Attack");
             }
         }
     }
@@ -70,7 +70,7 @@ public class EnemyController : MonoBehaviour
     {
         attackTimer = attackCD;
         attacking = true;
-        //FindObjectOfType<AudioManager>().Play("Attack");
+        FindObjectOfType<AudioManager>().Play("Attack");
         enemyAnim.SetBool("attacking", attacking);
     }
 
@@ -90,7 +90,7 @@ public class EnemyController : MonoBehaviour
     {
         isDead = true;
         enemyAnim.SetBool("isDead", isDead);
-        //FindObjectOfType<AudioManager>().Play("EnemyDeath");
+        FindObjectOfType<AudioManager>().Play("EnemyDeath");
         yield return new WaitForSeconds(0.58f);
         Destroy(gameObject);
     }
