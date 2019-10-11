@@ -7297,12 +7297,12 @@ PrefabInstance:
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.21
+      value: 12.23
       objectReference: {fileID: 0}
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.48
+      value: -7.47
       objectReference: {fileID: 0}
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
@@ -7348,6 +7348,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153039446462866884, guid: 04b030044c9c0324085a8415bee9f57d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 1.0573858
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153039446462866884, guid: 04b030044c9c0324085a8415bee9f57d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.1571014
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b030044c9c0324085a8415bee9f57d, type: 3}
@@ -14557,9 +14572,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1174624886}
   - component: {fileID: 1174624887}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Attack
-  m_TagString: Enemy
+  m_TagString: Witch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14591,9 +14606,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008963585, y: -0.00913322}
+  m_Offset: {x: 0.0069417953, y: -0.00913322}
   serializedVersion: 2
-  m_Radius: 0.17205334
+  m_Radius: 0.19227123
 --- !u!1001 &1175503989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15284,12 +15299,12 @@ PrefabInstance:
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.55
+      value: 28.44
       objectReference: {fileID: 0}
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.26
+      value: -7.17
       objectReference: {fileID: 0}
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
@@ -20518,12 +20533,12 @@ PrefabInstance:
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.71976
+      value: 53.72
       objectReference: {fileID: 0}
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.27
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 4673158308747828855, guid: 04b030044c9c0324085a8415bee9f57d,
         type: 3}
@@ -26232,6 +26247,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Witch Sprite Sheet_34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904742982847178303, guid: ed16cdb795e66d3469cd77a8983cc1ec,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904742982847178303, guid: ed16cdb795e66d3469cd77a8983cc1ec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2904742982847178273, guid: ed16cdb795e66d3469cd77a8983cc1ec,
         type: 3}

@@ -20,6 +20,8 @@ public class Sound
 
     [HideInInspector]
     public AudioSource source;
+
+    public AudioMixerGroup audioMixerGroup;
 }
 
 public class AudioManager : MonoBehaviour
@@ -27,6 +29,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
 
     public static AudioManager instance;
+
+    public AudioMixer volumeMixer;
 
     private void Awake()
     {
@@ -48,6 +52,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.audioMixerGroup;
         }
     }
 

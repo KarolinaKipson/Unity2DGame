@@ -10,8 +10,8 @@ public class SettingsMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         // Debug.Log(volume);
-        volumeMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
-        // PlayerPrefs.SetFloat("Volume", volume);
+        volumeMixer.SetFloat("volume", volume);
+        PlayerPrefs.SetFloat("volume", volume);
     }
 
     public void SetQuality(int qualityIndex)
@@ -24,3 +24,5 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullScreen;
     }
 }
+
+//Mathf.Log10(volume) * 20);

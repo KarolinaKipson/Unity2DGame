@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2703,6 +2703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830936515}
   - component: {fileID: 830936516}
+  - component: {fileID: 830936517}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -2777,9 +2778,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 750691273}
   m_Direction: 0
   m_MinValue: -80
-  m_MaxValue: 0
+  m_MaxValue: 20
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: -60
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2796,6 +2797,14 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!81 &830936517
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830936514}
+  m_Enabled: 1
 --- !u!1 &848110284
 GameObject:
   m_ObjectHideFlags: 0
@@ -6485,94 +6494,125 @@ MonoBehaviour:
   sounds:
   - name: MainMenuTheme
     clip: {fileID: 8300000, guid: d3e7833fbdafa20469d0c40e7781b5e6, type: 3}
-    volume: 0.326
-    pitch: 1.26
+    volume: 1
+    pitch: 0.7
     loop: 1
     source: {fileID: 0}
+    audioMixerGroup: {fileID: -6312229248530653359, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: MainTheme
     clip: {fileID: 8300000, guid: a9fd75229b333ed4296275ad76568eba, type: 3}
-    volume: 0.245
-    pitch: 0.64
+    volume: 1
+    pitch: 0.7
     loop: 1
     source: {fileID: 0}
+    audioMixerGroup: {fileID: -6312229248530653359, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: CollectDiamonds
     clip: {fileID: 8300000, guid: 279268df180b4b84585e54139694f590, type: 3}
     volume: 0.344
     pitch: 1.01
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: WinTheme
     clip: {fileID: 8300000, guid: e79c5fca8befd4c4a907e8b68c2410c2, type: 3}
-    volume: 0.191
-    pitch: 0.65
+    volume: 1
+    pitch: 0.7
     loop: 1
     source: {fileID: 0}
+    audioMixerGroup: {fileID: -6312229248530653359, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: GameOverTheme
     clip: {fileID: 8300000, guid: 9052134590c63a845a55b98fd57af880, type: 3}
-    volume: 0.203
-    pitch: 0.71
+    volume: 1
+    pitch: 0.7
     loop: 1
     source: {fileID: 0}
+    audioMixerGroup: {fileID: -6312229248530653359, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: Collectables
     clip: {fileID: 8300000, guid: 135a602abfc1ddd47807b60518f7601b, type: 3}
-    volume: 0.203
+    volume: 1
     pitch: 0.67
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: Attack
     clip: {fileID: 8300000, guid: f42bfb8233b4cd149a02ab54c0a5dd19, type: 3}
-    volume: 0.231
-    pitch: 0.85
+    volume: 1
+    pitch: 1.5
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: Button
     clip: {fileID: 8300000, guid: 0790d69540e9f6b41a44e969bd8536e6, type: 3}
     volume: 0.253
     pitch: 0.9
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: AttackPlayer
     clip: {fileID: 8300000, guid: 072f99a90af257c4796ac8e6bc8071c8, type: 3}
-    volume: 0.186
-    pitch: 0.64
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: PlatformFall
     clip: {fileID: 8300000, guid: 4c2bd1f4d715e5641a018adfa70449cd, type: 3}
-    volume: 0.154
-    pitch: 1.26
+    volume: 1
+    pitch: 2.5
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: PoisonCollectables
     clip: {fileID: 8300000, guid: 0790d69540e9f6b41a44e969bd8536e6, type: 3}
-    volume: 0.56
-    pitch: 1.54
+    volume: 1
+    pitch: 2
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: EnemyDeath
     clip: {fileID: 8300000, guid: 0677967659cb76a41808c3ca6eb504c4, type: 3}
-    volume: 0.255
-    pitch: 0.55
+    volume: 1
+    pitch: 1.5
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: HealthCollectables
     clip: {fileID: 8300000, guid: 135a602abfc1ddd47807b60518f7601b, type: 3}
-    volume: 0.455
-    pitch: 2.23
+    volume: 1
+    pitch: 1.4
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: NextLevel
     clip: {fileID: 8300000, guid: 598c669651fd32a46a6ca21db08aaee8, type: 3}
-    volume: 0.292
-    pitch: 0.94
+    volume: 1
+    pitch: 2.5
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
   - name: Witch
     clip: {fileID: 8300000, guid: 0ae6d9aa2bcfe1d468353cc08d1c6afa, type: 3}
-    volume: 0.71
-    pitch: 0.89
+    volume: 1
+    pitch: 2.5
     loop: 0
     source: {fileID: 0}
+    audioMixerGroup: {fileID: 353318811581024690, guid: 1cfa0f4d573033241b7520b0517b479a,
+      type: 2}
+  volumeMixer: {fileID: 0}
 --- !u!1 &2073990514
 GameObject:
   m_ObjectHideFlags: 0

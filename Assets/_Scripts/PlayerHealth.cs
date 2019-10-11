@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
         isDead = false;
         playerAnim = GetComponent<Animator>();
         playerAnim.enabled = true;
-        //isRunning = false;
         healthBar.value = maxHealth;
         gameLevelManager = FindObjectOfType<LevelManager>();
         playerDemage = FindObjectOfType<EnemyController>();
@@ -48,6 +47,20 @@ public class PlayerHealth : MonoBehaviour
         {
             damage = playerDemage.playerDemage;
             StartCoroutine(TakeDamage(damage));
+        }
+
+        if (collision.tag == "Witch")
+        {
+            damage = 1f;
+            StartCoroutine(TakeDamage(damage));
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Witch")
+        {
+            FindObjectOfType<AudioManager>().Play("Witch");
         }
     }
 

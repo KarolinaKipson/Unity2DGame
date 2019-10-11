@@ -24,9 +24,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        //maxHealth = 5f;
         cHealth = maxHealth;
-        //demage = 1f;
         attacking = false;
         isDead = false;
         enemyAnim = GetComponent<Animator>();
