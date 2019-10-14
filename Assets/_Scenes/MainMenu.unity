@@ -492,9 +492,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "A long time ago one witch wanted all the treasue from other witches and
     got caught stealing from them. As a punishment she is bound to the treasure by
-    magic and only a brave knight can break this spell...\n\nUse left ctrl to kill
-    with sword, space to jump and left and right arrow to move.\n                                                             By
-    Karolina Kipson\n"
+    magic and only a brave knight can break this spell...\n\nUse left ctrl to kill,
+    space to jump and left and right arrow(or A and D key) to move.    \n                                        Made
+    by Karolina Kipson                                                                \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

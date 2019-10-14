@@ -1684,10 +1684,30 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: demage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3898530675489966842, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: distance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_Value
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d4fc0df5471674eabfe950905ceae5, type: 3}
@@ -2310,10 +2330,30 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: demage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3898530675489966842, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: distance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_Value
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d4fc0df5471674eabfe950905ceae5, type: 3}
@@ -4509,6 +4549,11 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 389655425468175119, guid: 6741060fc634d5c4e8361ee7c564c15c,
+        type: 3}
+      propertyPath: demage
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7423808104008893184, guid: 6741060fc634d5c4e8361ee7c564c15c,
         type: 3}
       propertyPath: distance
@@ -4754,10 +4799,30 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: demage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3898530675489966842, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: distance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_Value
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d4fc0df5471674eabfe950905ceae5, type: 3}
@@ -9666,6 +9731,11 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 389655425468175119, guid: 6741060fc634d5c4e8361ee7c564c15c,
+        type: 3}
+      propertyPath: demage
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7423808104008893184, guid: 6741060fc634d5c4e8361ee7c564c15c,
         type: 3}
       propertyPath: distance
@@ -12174,6 +12244,11 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 389655425468175119, guid: 6741060fc634d5c4e8361ee7c564c15c,
+        type: 3}
+      propertyPath: demage
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7423808104008893184, guid: 6741060fc634d5c4e8361ee7c564c15c,
         type: 3}
       propertyPath: distance
@@ -12419,10 +12494,25 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.06
       objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3898530675489966842, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: distance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260094592820372320, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_Value
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d4fc0df5471674eabfe950905ceae5, type: 3}
@@ -21673,7 +21763,7 @@ PrefabInstance:
     - target: {fileID: 389655425468175119, guid: 6741060fc634d5c4e8361ee7c564c15c,
         type: 3}
       propertyPath: demage
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7423808104008893184, guid: 6741060fc634d5c4e8361ee7c564c15c,
         type: 3}
@@ -22104,6 +22194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playerDemage
       value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 389655425468175119, guid: 6741060fc634d5c4e8361ee7c564c15c,
+        type: 3}
+      propertyPath: demage
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7423808104008893184, guid: 6741060fc634d5c4e8361ee7c564c15c,
         type: 3}
@@ -25282,12 +25377,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIexCtSikVAIAAPgEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2zAM/BUPz01HShyl7q1VHKeHPCZuJxddEAqyOKZIDR+xnYz/vSAlW6p6Mr1YAIslqE8mlG2RO21WRpQPukT2fcbCmX2ZDcF73MNGq7X4wBPnVZSuDiSInBdwQhOehjSrG3RG8B9qIwM5IdArUWnTLMsN5to6S3AF0iKFjHYhWxH0OWN7+rlYhJQDnS5vwumDTotkdqQjR+XQDNSr+dfrnntidkSvuISmxTKoHviLtGenHU3RPD0jRLiWUtheDHOHNg6bQ2s9jUKEUgANFxUksXONYlO7IHWc/lRVFl0vysDhVhhyqavLfurOugbstlP2DtJHCcnlPMrqqj78R7hIY7gyurk/NU6T0MTVgm9f4MDBupG5Y/h20J5Gh3Ygt/Am8bVG9ahXRntVUtAZH1K9xcvb4e95trxGvh3wTuoE9O1geTK5nzDDMY6/z6Vo3qKV8w5YSx0tjwuAhi7nFwmO62H7EoQGFX8s/obNeI/6wJ0w1lGon1IFeW/am0Bly+hZmMa7XBuFEe5Ft6hAusMzlXHTO5zERm0nkTsIL6Zv3sdOD2GSEuGBnyST0LPenS/L1nr3gLZ+8k4KhYPoEHgkn3KtVLdiY09OaWtvKuCjtI0X5b+rxSABzrOrcpHy7FuS3VxcpzDPqhu+yDiHKstY3D2haE6Qz53Q3h66NTUUV7Rnpw/JbGWgjeteGtitxEejR5YLVek1N4jqqatwFo6GmtDDLJelIIPW6JxQ8b7ZZ8Gk5lssi3OhIk663DsDxVClYK141y4gBcvjl6NgR3b8C1BLAwQUAAAICAAACCHs5yi4TWwAAAB3AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9Kz0FFQSi9KLMgoBgoYgjilmSkgdrRSokFicrKZcYqlYbKZhYGZua6pYaKJWZp5sqVZcnJimpmZUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIexCtSikVAIAAPgEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIeznKLhNbAAAAHcAAAAJACQAAAAAAAAAAAAAAKECAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAWAMAAAAA
+    dataString: UEsDBBQAAAgIAAAIIex/3qRBVAIAAPgEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMtu2zAQ/BWD56aQEkepe2sVx+khD8QtctFlQ60swhQp8BHbCfzvXVKypaon0zOzy9kH9cmEsi1yp83KiPJBl8i+z1g4sy+zgbzHPWy0WosPPGleRenqIIKoeQEnNOFpCLO6QWcE/6E2MogTAr0SlTbNstxgrq2zBFcgLRJltAvRiqDPGdvTz8UihBzodHkTTh90WiSzIx05KodmkF7Nv1732pOyE3rFJTQtlsH1oF+kvXoRVYrK6QWB4FpKYXsvzB3aWGsOrfVUCQlKAVRbNJDEi2sUm9oFp+Pwp6qy6HpPBg63wlCTurzsp+4614DddsbeQfpoIbmcR1td1of/BBdppCujm/vTxWkSLnG14NsXOHCwbtTbMXw7eE9jg3Ygt/Am8bVG9ahXRntVEumMD6He4uXt8PdcW14j3w54Z3UC+nboeDIZT6jhGMvf51I0b7GV8w5YSx1bHuePhobziwzH7bB9CkKDiz8Wf8NmvEY9cSeMdUT1Vapg7017E6RsGXsWqvEu10ZhhHvTLSqQ7vBMadx0hhNudO2EuYPwYPrLe+70DiYhER70STKhnvXuPCxb690D2vrJOynUOFlgHqlRuVaq2zE7YUPc2psKOA7Fbrwo/90tBglwnl2Vi5Rn35Ls5uI6hXlW3fBFxjlUWcbi8glFhYJ87pz2/aGxqSG5okU7fUhmKwNt3PfSwG4lPho96rlQlV5zg6ieugxn42joEnqZ5bIU1KE1OidUHDj7LJjUfItlcU5UxEqXe2egGLIUrBXv2gWkYHn8chTsyI5/AVBLAwQUAAAICAAACCHs5yi4TWwAAAB3AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9Kz0FFQSi9KLMgoBgoYgjilmSkgdrRSokFicrKZcYqlYbKZhYGZua6pYaKJWZp5sqVZcnJimpmZUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIex/3qRBVAIAAPgEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIeznKLhNbAAAAHcAAAAJACQAAAAAAAAAAAAAAKECAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAWAMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 0
+  showNavGraphs: 1
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -25310,11 +25405,43 @@ MonoBehaviour:
     _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
     _AreaColors:
     - {r: 0, g: 0, b: 0, a: 0}
-  tagNames: []
+  tagNames:
+  - Basic Ground
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:

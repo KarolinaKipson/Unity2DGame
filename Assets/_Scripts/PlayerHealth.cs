@@ -51,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (collision.tag == "Witch")
         {
-            damage = 1f;
+            damage = 0.8f;
             StartCoroutine(TakeDamage(damage));
         }
     }

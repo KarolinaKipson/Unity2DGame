@@ -1022,6 +1022,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6781005643822823074, guid: bcccb46351e4ae14cb38730439e75837,
+        type: 3}
+      propertyPath: demage
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcccb46351e4ae14cb38730439e75837, type: 3}
 --- !u!4 &58796715 stripped
@@ -7460,6 +7465,11 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.04
       objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3898530674886070267, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: m_Offset.x
@@ -9592,10 +9602,10 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.04
       objectReference: {fileID: 0}
-    - target: {fileID: 4924005663024523130, guid: 46d4fc0df5471674eabfe950905ceae5,
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
-      propertyPath: m_Layer
-      value: 9
+      propertyPath: maxHealth
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5682838119143456011, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
@@ -9607,7 +9617,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 2809431023346611043, guid: 46d4fc0df5471674eabfe950905ceae5,
+    - target: {fileID: 5151268128595758305, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: m_Layer
       value: 9
@@ -9617,12 +9627,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 5151268128595758305, guid: 46d4fc0df5471674eabfe950905ceae5,
+    - target: {fileID: 2517497434043396221, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 2517497434043396221, guid: 46d4fc0df5471674eabfe950905ceae5,
+    - target: {fileID: 2809431023346611043, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924005663024523130, guid: 46d4fc0df5471674eabfe950905ceae5,
         type: 3}
       propertyPath: m_Layer
       value: 9
@@ -12326,6 +12341,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6781005643822823074, guid: bcccb46351e4ae14cb38730439e75837,
+        type: 3}
+      propertyPath: demage
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcccb46351e4ae14cb38730439e75837, type: 3}
 --- !u!4 &1154674384 stripped
@@ -14029,6 +14049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781005643822823074, guid: bcccb46351e4ae14cb38730439e75837,
+        type: 3}
+      propertyPath: demage
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcccb46351e4ae14cb38730439e75837, type: 3}
@@ -17612,6 +17637,11 @@ PrefabInstance:
       propertyPath: playerDemage
       value: 0.04
       objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d4fc0df5471674eabfe950905ceae5, type: 3}
 --- !u!4 &1622794181 stripped
@@ -17775,7 +17805,7 @@ PrefabInstance:
     - target: {fileID: 6781005643822823074, guid: bcccb46351e4ae14cb38730439e75837,
         type: 3}
       propertyPath: demage
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcccb46351e4ae14cb38730439e75837, type: 3}
@@ -21791,6 +21821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playerDemage
       value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884812598977311273, guid: 46d4fc0df5471674eabfe950905ceae5,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46d4fc0df5471674eabfe950905ceae5, type: 3}
